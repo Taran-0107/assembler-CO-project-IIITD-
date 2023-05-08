@@ -1,0 +1,124 @@
+regcode={"R0": "000", "R1": "001", "R2": "010", "R3": "011", "R4": "100", "R5": "101", "R6": "110", "FLAG": "111"}
+
+def op00000(cmnd):
+    return ("00000"+"00"+f"{regcode[cmnd[1]]}"+f"{regcode[cmnd[2]]}"+f"{regcode[cmnd[3]]}")
+
+def op00001(cmnd):
+
+def op00010(cmnd):
+
+def op00011(cmnd):
+
+def op00100(cmnd):
+
+def op00101(cmnd):
+
+def op00110(cmnd):
+
+def op00111(cmnd):
+
+def op01000(cmnd):
+
+def op01001(cmnd):
+
+def op01010(cmnd):
+
+def op01011(cmnd):
+
+def op01100(cmnd):
+
+def op01101(cmnd):
+
+def op01110(cmnd):
+
+def op01111(cmnd):
+
+def op11100(cmnd):
+
+def op11101(cmnd):
+
+def op11111(cmnd):
+
+def op11010(cmnd):
+
+# def op10000(cmnd):
+
+# def op10001(cmnd):
+
+# def op10010(cmnd):
+
+def label():
+
+def variable():
+
+def mainfuction(cmnd):
+    if cmnd[0]=="add":
+        return op00000(cmnd)
+    elif cmnd[0]=="sub":
+        return op00001(cmnd)
+    elif cmnd[2][0]=="$":
+        return op00010(cmnd)
+    elif cmnd[0]=="mov":
+        if cmnd[2][0]=="$":
+            return op00010(cmnd)
+        else:
+            return op00011(cmnd)
+    elif cmnd[0]=="ld":
+        return op00100(cmnd)
+    elif cmnd[0]=="st":
+        return op00101(cmnd)
+    elif cmnd[0]=="mul":
+        return op00110(cmnd)
+    elif cmnd[0]=="div":
+        return op00111(cmnd)
+    elif cmnd[0]=="rs":
+        return op01000(cmnd)
+    elif cmnd[0]=="ls":
+        return op01001(cmnd)
+    elif cmnd[0]=="xor":
+        return op01010(cmnd)
+    elif cmnd[0]=="or":
+        return op01011(cmnd)
+    elif cmnd[0]=="and":
+        return op01100(cmnd)
+    elif cmnd[0]=="not":
+        return op01101(cmnd)
+    elif cmnd[0]=="cmp":
+        return op01110(cmnd)
+    elif cmnd[0]=="jmp":
+        return op01111(cmnd)
+    elif cmnd[0]=="jlt":
+        return op11100(cmnd)
+    elif cmnd[0]=="jgt":
+        return op11101(cmnd)
+    elif cmnd[0]=="je":
+        return op11111(cmnd)
+    elif cmnd[0]=="hlt":
+        return op11010(cmnd)
+    # elif cmnd[0]=="addf":
+    #     return op10000(cmnd)
+    # elif cmnd[0]=="subf":
+    #     return op10001(cmnd)
+    # elif cmnd[0]=="movf":
+    #     return op10010(cmnd)
+    else:
+        return "ERROR: typo in instruction name"
+
+
+file = open('stdin', 'r')
+s=file.read().split('\n')
+ff= open('stdout', 'w')
+ns=list(filter(None, s))
+if ns[0][0:3]!="var":
+    ff.write("ERROR: variables not declared at the beginning")
+elif ns[-1][-3:]!="hlt":
+    ff.write("ERROR: hlt not being used as the last instruction")
+else:
+    for j in ns:
+        cmnd=list((j).split(' '))
+        if cmnd[0]=="var":
+            variable()
+        elif cmnd[0][-1]==":":
+            label()
+        else:
+    
