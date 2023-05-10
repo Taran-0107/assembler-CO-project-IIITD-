@@ -109,6 +109,10 @@ file = open('stdin.txt', 'r')
 s=file.read().split('\n')
 ff= open('stdout.txt', 'w')
 ns=list(filter(None, s))
+for i in range(len(ns)):
+    if ns[i][-1]==":":
+        labels[ns[i]]=int_to_binary(i,7)
+
 if "hlt" not in ns:
     ff.write("ERROR: missing hlt instruction")
 elif ns[0][0:3]!="var":
