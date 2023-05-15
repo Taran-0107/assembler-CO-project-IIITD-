@@ -3,6 +3,7 @@ this repository contains the code for Computer Organisation(CO) group project of
 
 the provided code converts input in form of assembly language, to machine code
 the input is given through a file "stdin.txt" and the output is written to the file "stdout.txt"
+the code main file is "Assembler.py"
 
 the code consists of 4 main parts:
 first, the dictionary of opcodes and redister adress, having the name as key and it's binary as value.
@@ -19,3 +20,32 @@ lastly there is another iteration through each line, this time cheking the opcod
 classifying the intructions into type A,B,C,D,E or F and then calling the funtion assembler_to_binary
 
 errors in the code are checked throughout each of the steps mentioned above, in both the iterations and inside the function
+
+lastly, if no errors are found the assembly code is written to the output file and a message is printed on the terminal,
+in case errors are found, the error which is detected first is wriiten to the output file and an exception is raised in console
+
+
+Group Members
+Tejas
+Tarandeep
+Sweta
+Tanmay
+
+Contributions
+Tejas:
+Made a function to write the output and the error into text files and also to track the line number.
+Tarandeep:
+Made a function to convert instructions to machine code (binary digits).
+Sweta:
+Made a function for error handling.
+Tanmay:
+Made a function to take input and classify it.
+Overall, the group members worked together effectively to create a functional assembler. Each member made a significant contribution to the project, and their work was essential to the success of the project.
+
+Here are some additional details about each member's contribution:
+
+Tejas: Tejas' function to write the output and the error into text files and also to track the line number was essential for debugging the assembler. This function allowed the group to easily identify and fix errors in the assembler's code.
+Tarandeep: Tarandeep's function to convert instructions to machine code (binary digits) was essential for the assembler to be able to run on a computer. This function allowed the group to translate the assembler's code into a format that the computer could understand.
+Sweta: Sweta's function for error handling was essential for ensuring that the assembler could run without crashing. This function allowed the group to catch and handle errors that occurred during the execution of the assembler's code.
+Tanmay: Tanmay's function to take input and classify it was essential for the assembler to be able to be used to create different types of programs. This function allowed the group to create a versatile assembler that could be used for a variety of tasks.
+The group members worked together effectively to create a functional assembler. Each member made a significant contribution to the project, and their work was essential to the success of the project.
