@@ -26,10 +26,10 @@ in case errors are found, the error which is detected first is wriiten to the ou
 
 
 Group Members
-Tejas
-Tarandeep
-Sweta
-Tanmay
+Tejas (tejasj228)
+Tarandeep (Taran-0107)
+Sweta (cypherei00)
+Tanmay (TanmayKhatri28)
 
 Contributions
 Tejas:
