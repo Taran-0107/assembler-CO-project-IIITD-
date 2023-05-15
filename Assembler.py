@@ -170,9 +170,26 @@ linecounter=1
 #main loop that takes input and classifies the instruction into a type, 
 #then calls the function mentioned above to covert the assembly code to binary.
 for j in ns:
+        
+        #to remove unwanted characters like spaces and indentations
         cmnd=list((j).split(' '))
+
+        while cmnd[0]=='':
+            cmnd.remove("")
+
+        #checking for label
         if cmnd[0][-1]==":":
             cmnd=cmnd[1:]
+
+        for i in range(len(cmnd)):
+            if ":" in cmnd[i]:
+                cmnd[i]=cmnd[i][cmnd[i].index(':')+1:]
+            if '\t' in cmnd[i]:
+                cmnd[i]=cmnd[i].replace("\t","")
+
+        while cmnd[0]=='':
+            cmnd.remove("")
+        
         if cmnd[0]=="var":
             type="var"
         elif(len(cmnd)==1):
