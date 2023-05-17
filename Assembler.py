@@ -232,7 +232,8 @@ for j in ns:
         if "ERROR:" in temp:
             output=temp
             break
-        output+=temp
+        else:
+            output+=temp
         if linecounter>varcount:
             output+=("\n")
         linecounter+=1
