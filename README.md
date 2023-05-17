@@ -7,7 +7,7 @@ the code main file is "Assembler.py"
 
 the code consists of 4 main parts:
 first, the dictionary of opcodes and redister adress, having the name as key and it's binary as value.
-there is also a dictinary of variables and lables, to which the data is stored later in an iteration of all the lines of code in inout file
+there is also a dictionary of variables and labels, to which the data is stored later in an iteration of all the lines of code in the input
 
 then there is a function called assembler_to_binary which converts a single instruction to machine code, 
 given the list of words and type of instruction as input. this function is defined in the begining but is called much later in the code
