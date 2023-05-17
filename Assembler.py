@@ -232,10 +232,10 @@ for j in ns:
         if "ERROR:" in temp:
             output=temp
             break
-        else:
+        elif not error:
             output+=temp
-        if linecounter>varcount:
-            output+=("\n")
+            if linecounter>varcount:
+                output+=("\n")
         linecounter+=1
 
 ff.write(output)
