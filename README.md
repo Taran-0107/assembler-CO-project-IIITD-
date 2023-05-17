@@ -1,8 +1,8 @@
 # assembler-CO-project-IIITD-
-this repository contains the code for Computer Organisation(CO) group project of Btech 1st year IIITD. students in the group: Tarandeep Singh, Tanmay Khatri, Sweta Singdha, Tejas Jaiswal
+this repository contains the code for Computer Organisation(CO) group project of Btech 1st year IIITD. students in the group: Tarandeep Singh, Tanmay Khatri, Sweta Snigdha, Tejas Jaiswal
 
 the provided code converts input in form of assembly language, to machine code
-the input is given through a file "stdin.txt" and the output is written to the file "stdout.txt"
+the input is given through stdin and output is displayed in the console
 the code main file is "Assembler.py"
 
 the code consists of 4 main parts:
@@ -21,8 +21,8 @@ classifying the intructions into type A,B,C,D,E or F and then calling the funtio
 
 errors in the code are checked throughout each of the steps mentioned above, in both the iterations and inside the function
 
-lastly, if no errors are found the assembly code is written to the output file and a message is printed on the terminal,
-in case errors are found, the error which is detected first is wriiten to the output file and an exception is raised in console
+lastly, if no errors are found the assembly code is printed in the console,
+in case errors are found, the error which is detected first according to provided code is printed in the console.
 
 
 Group Members
