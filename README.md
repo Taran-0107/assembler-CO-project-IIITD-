@@ -2,7 +2,7 @@
 this repository contains the code for Computer Organisation(CO) group project of Btech 1st year IIITD. students in the group: Tarandeep Singh, Tanmay Khatri, Sweta Singdha, Tejas Jaiswal
 
 the provided code converts input in form of assembly language, to machine code
-the input is given through a file "stdin.txt" and the output is written to the file "stdout.txt"
+the input is given through the terminal and the output is printed in the terminal
 the code main file is "Assembler.py"
 
 the code consists of 4 main parts:
