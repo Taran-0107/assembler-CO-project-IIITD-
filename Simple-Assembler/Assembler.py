@@ -238,9 +238,10 @@ for j in ns:
         if "ERROR:" in temp:
             output=temp
             break
-        output+=temp
-        if linecounter>varcount:
-            output+=("\n")
+        elif not error:
+            output+=temp
+            if linecounter>varcount:
+                output+=("\n")
         linecounter+=1
 
 ff.write(output)
