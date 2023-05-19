@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 assembler_new2.py
+python3 src/main.py $@.py
